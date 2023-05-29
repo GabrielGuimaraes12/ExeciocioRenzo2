@@ -3,7 +3,7 @@ from database import Database
 from FamiliaDatabase import FamiliaDatabase
 # Configuração da conexão com o Neo4j
 db=Database("bolt://18.206.64.77:7687" , "neo4j", "checkouts-reference-dynamometers")
-db.drop_all()
+
 
 familia=FamiliaDatabase(db)
 
@@ -22,3 +22,4 @@ parceiros_de_lise = familia.get_casados_com_lise()
 print("Parceiros de Lise:")
 print(parceiros_de_lise)
 
+db.close()
