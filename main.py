@@ -18,8 +18,8 @@ print("Pais de Gabriel Guimaraes:")
 print(pais_de_gabriel)
 
 # Consulta: Com quem Lise é casada?
-parceiros_de_lise = familia.get_casados_com_lise()
-print("Parceiros de Lise:")
-print(parceiros_de_lise)
+parceiros_de_geraldo = familia.get_casados_com_geraldo()
+print("Parceiros de Geraldo:")
+print(parceiros_de_geraldo)
 
 db.close()

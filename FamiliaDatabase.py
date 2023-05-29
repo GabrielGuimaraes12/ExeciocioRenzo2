@@ -15,7 +15,7 @@ class FamiliaDatabase:
         return [result["nome_pai"] for result in results]
 
     # Com quem Lise é casada?
-    def get_casados_com_lise(self):
+    def get_casados_com_geraldo(self):
         query = "MATCH (p1:Pessoa {nome:'Geraldo'})-[:CASADO_COM]->(p2:Pessoa) RETURN p2.nome AS nome_parceiro"
         results = self.db.execute_query(query)
         return [result["nome_parceiro"] for result in results]
