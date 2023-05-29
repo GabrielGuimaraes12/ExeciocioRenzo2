@@ -22,4 +22,3 @@ parceiros_de_lise = familia.get_casados_com_lise()
 print("Parceiros de Lise:")
 print(parceiros_de_lise)
 
-db.close()
